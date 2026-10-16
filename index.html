@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Klinik Afeeya Desa Coalfields | Buka Sehingga 11:30 Malam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F8F7;--sf:#fff;--ink:#0A2A2F;--mt:#587074;--brand:#0E7C73;--deep:#08262B;--coral:#FF8A5B;--line:#DAE7E5;--tint:#E3F2EF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0A1A1D;--sf:#112529;--ink:#E6F2F0;--mt:#93ABAD;--brand:#3CC9B8;--line:#1E3A3F;--tint:#143338}}
+:root[data-theme=dark]{--bg:#0A1A1D;--sf:#112529;--ink:#E6F2F0;--mt:#93ABAD;--brand:#3CC9B8;--line:#1E3A3F;--tint:#143338}
+*{box-sizing:border-box;margin:0}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}.w{max-width:1160px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--brand);display:grid;place-items:center}
+.logo small{display:block;font:500 11px Figtree;color:var(--mt);letter-spacing:0}
+nav{display:flex;gap:4px;overflow-x:auto;max-width:100%}
+nav a{padding:8px 14px;border-radius:99px;text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap;color:var(--mt)}
+nav a.on{background:var(--ink);color:var(--bg)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:99px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:15px;font-family:inherit;background:var(--brand);color:#fff}
+.btn.o{background:transparent;border:1.5px solid currentColor}.btn.c{background:var(--coral);color:#2B1105}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.hero{background:linear-gradient(180deg,#9AD6E0 0%,#2E7F8E 38%,#0B3A44 70%,#06161F 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+.hero .orb{position:absolute;right:8%;top:40px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,#FFE9B8,#FFB86B 60%,transparent 62%);opacity:.9}
+.hero h1{font-size:clamp(38px,7vw,84px);font-weight:800;max-width:11em}
+.hero h1 em{font-style:normal;color:#FFB48F}
+.hero p.lead{max-width:34em;font-size:18px;margin:20px 0 28px;color:#DDEFF1}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.day{margin-top:48px;background:rgba(6,22,31,.55);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:24px;padding:22px 24px}
+.day .st{display:flex;align-items:center;gap:10px;font-weight:600;margin-bottom:18px}
+.dot{width:10px;height:10px;border-radius:50%;background:#4FE3B0;box-shadow:0 0 0 0 #4FE3B0aa;animation:pl 2s infinite}.dot.x{background:#FFB48F;animation:none}
+@keyframes pl{70%{box-shadow:0 0 0 9px #4FE3B000}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+.track{position:relative;height:46px;border-radius:99px;background:rgba(255,255,255,.1)}
+.seg{position:absolute;top:0;bottom:0;border-radius:99px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#06161F}
+.s1{background:#FFD98A}.s2{background:#8FD6E8}.s3{background:#FF8A5B}
+.now{position:absolute;top:-8px;bottom:-8px;width:3px;background:#fff;border-radius:2px}
+.now b{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:11px;background:#fff;color:#06161F;padding:1px 7px;border-radius:99px}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:#B9D3D8;margin-top:10px}
+section.pg{display:none}section.pg.on{display:block}
+.band{background:var(--deep);color:#fff;padding:56px 0 48px}.band h1{font-size:clamp(34px,5vw,56px);font-weight:800}.band p{color:#B9D3D8;max-width:36em;margin-top:12px}
+.sec{padding:64px 0}.sec h2{font-size:clamp(28px,4vw,42px);font-weight:800;margin-bottom:12px}.sub{color:var(--mt);max-width:38em;margin-bottom:32px}
+.g{display:grid;gap:16px}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{font-size:20px;margin:14px 0 8px}.card p{color:var(--mt);font-size:15px}
+.ic{width:48px;height:48px;border-radius:14px;background:var(--tint);display:grid;place-items:center;color:var(--brand)}
+.ic svg,.logo svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.logo svg{color:#fff}
+.card a.l{display:inline-block;margin-top:14px;font-weight:600;color:var(--brand);text-decoration:none}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}@media(max-width:800px){.split{grid-template-columns:1fr}.hero .orb{display:none}}
+.feat{background:var(--brand);color:#fff;border-radius:28px;padding:36px}.feat h2{font-size:34px}.feat li{margin:12px 0 0 18px}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:18px 0;background:var(--sf)}
+.mq div{display:flex;gap:44px;width:max-content;animation:mq 40s linear infinite;font:700 20px 'Bricolage Grotesque';color:var(--mt)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rv{border-left:4px solid var(--coral)}.rv p{font-size:17px;color:var(--ink)}.rv small{color:var(--mt);display:block;margin-top:14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{padding:9px 18px;border-radius:99px;border:1.5px solid var(--line);background:var(--sf);color:var(--ink);font:500 14px Figtree;cursor:pointer}.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+input,select,textarea{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--sf);color:var(--ink);font:inherit}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px}
+.search{max-width:460px;margin-bottom:24px}
+.pn{display:flex;align-items:center;gap:12px;font-weight:600}.pn i{font:800 13px 'Bricolage Grotesque';font-style:normal;width:44px;height:44px;border-radius:12px;background:var(--tint);color:var(--brand);display:grid;place-items:center}
+.pn small{display:block;font-weight:400;color:var(--mt);font-size:13px}
+table{width:100%;border-collapse:collapse}td{padding:12px 0;border-bottom:1px dashed var(--line)}td:last-child{text-align:right;font-weight:600}
+.cta2{background:var(--deep);color:#fff;border-radius:28px;padding:44px;display:flex;gap:24px;justify-content:space-between;align-items:center;flex-wrap:wrap}.cta2 h2{font-size:32px;max-width:14em}
+footer{background:#06161F;color:#9FBABF;padding:44px 0 32px;font-size:14px;margin-top:40px}footer b{color:#fff}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:9;box-shadow:0 8px 24px #0006}
+</style>
+</head>
+<body>
+<header><div class="w bar">
+<a class="logo" href="#/"><i><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></i><span>KLINIK AFEEYA<small>Desa Coalfields</small></span></a>
+<nav id="nav"><a href="#/">Utama</a><a href="#/rawatan">Rawatan</a><a href="#/panel">Panel Syarikat</a><a href="#/klinik">Klinik &amp; Hubungi</a></nav>
+</div></header>
+
+<main>
+<!-- UTAMA -->
+<section class="pg" id="p-">
+<div class="hero"><div class="orb"></div><div class="w">
+<h1>Doktor sedia menunggu, <em>sehingga 11:30 malam.</em></h1>
+<p class="lead">Rawatan keluarga, saringan darah dan kad panel tanpa tunai, di bawah satu bumbung di Desa Coalfields. Walk-in dialu-alukan setiap hari.</p>
+<div class="cta"><a class="btn c" href="#" data-wa="Salam Klinik Afeeya, saya ingin membuat temujanji.">WhatsApp Temujanji</a><a class="btn o" href="#/rawatan">Lihat rawatan</a></div>
+<div class="day"><div class="st"><span class="dot" id="dot"></span><span id="stx">Menyemak status...</span></div>
+<div class="track" id="track"></div>
+<div class="ticks"><span>8:30 pagi</span><span>1 tgh</span><span>6 ptg</span><span>11:30 mlm</span></div></div>
+</div></div>
+<div class="mq"><div id="mq"></div></div>
+<div class="w sec"><h2>Kenapa jiran anda datang ke sini</h2><p class="sub">Tiga perkara yang paling kerap disebut dalam ulasan pesakit.</p>
+<div class="g g3" id="why"></div></div>
+<div class="w" style="padding-bottom:24px"><div class="split">
+<div><h2 style="font-size:clamp(28px,4vw,42px);font-weight:800">Anak demam jam 10 malam? Kami buka.</h2><p class="sub" style="margin-top:12px">Ibu bapa bekerja tidak perlu ambil cuti kecemasan. Sif malam beroperasi setiap hari, termasuk hujung minggu.</p><a class="btn" href="#/klinik">Waktu operasi penuh</a></div>
+<div class="feat"><h2>4.8 / 5</h2><p>Penilaian Google Maps</p><ul><li>Doktor menerangkan setiap ubat</li><li>Ruang menunggu bersih dan berhawa dingin</li><li>Tuntutan panel yang lancar</li></ul></div></div></div>
+<div class="w sec"><h2>Kata pesakit kami</h2><div class="g g3" id="rv"></div></div>
+<div class="w"><div class="cta2"><h2>Tidak pasti panel anda diterima?</h2><a class="btn c" href="#/panel">Semak kad panel</a></div></div>
+</section>
+
+<!-- RAWATAN -->
+<section class="pg" id="p-rawatan">
+<div class="band"><div class="w"><h1>Rawatan &amp; saringan</h1><p>Dari demam kanak-kanak sehingga ujian darah, kebanyakan kes asas selesai dalam satu lawatan.</p></div></div>
+<div class="w sec"><div class="chips" id="chips"></div><div class="g g3" id="srv"></div></div>
+</section>
+
+<!-- PANEL -->
+<section class="pg" id="p-panel">
+<div class="band"><div class="w"><h1>Panel &amp; insurans korporat</h1><p>Tunjukkan kad fizikal, e-kad atau aplikasi majikan anda. Tanpa bayaran tunai di kaunter.</p></div></div>
+<div class="w sec"><input class="search" id="ps" placeholder="Cari panel, cth. PMCare" aria-label="Cari panel"><div class="g g3" id="pnl"></div>
+<div class="cta2" style="margin-top:40px"><div><h2>Panel anda tiada dalam senarai?</h2><p style="color:#B9D3D8;margin-top:8px">Hantar gambar kad anda. Kami semak dalam masa 5 minit.</p></div><a class="btn c" href="#" data-wa="Salam, saya ingin semak kad panel saya diterima atau tidak.">Hantar gambar kad</a></div></div>
+</section>
+
+<!-- KLINIK -->
+<section class="pg" id="p-klinik">
+<div class="band"><div class="w"><h1>Klinik &amp; hubungi kami</h1><p>Desa Coalfields, 47000 Sungai Buloh. Dekat dengan Bandar Seri Coalfields, Saujana Utama dan Puncak Alam.</p></div></div>
+<div class="w sec"><div class="g g2">
+<div class="card"><h3 style="margin-top:0">Waktu operasi</h3><table>
+<tr><td>Isnin – Jumaat, pagi</td><td>8:30 pagi – 1:00 tgh</td></tr><tr><td>Isnin – Jumaat, petang</td><td>2:00 – 6:00 ptg</td></tr><tr><td>Isnin – Jumaat, malam</td><td>7:00 – 11:30 mlm</td></tr>
+<tr><td>Sabtu &amp; Ahad, siang</td><td>9:00 pagi – 1:00 tgh, 2:00 – 6:00 ptg</td></tr><tr><td>Sabtu &amp; Ahad, malam</td><td>7:00 – 10:30 mlm</td></tr></table>
+<p style="margin-top:14px">Buka pada kebanyakan cuti umum. Sahkan melalui WhatsApp musim perayaan.</p>
+<div class="cta" style="margin-top:18px"><a class="btn" href="tel:+601116622829">011-1662 2829</a><a class="btn o" target="_blank" rel="noopener" href="https://maps.google.com/?q=Klinik+Afeeya+Desa+Coalfields">Google Maps</a><a class="btn o" target="_blank" rel="noopener" href="https://waze.com/ul?q=Klinik%20Afeeya%20Desa%20Coalfields">Waze</a></div></div>
+<div class="card"><h3 style="margin-top:0">Daftar atau tanya doktor</h3>
+<form id="f"><label for="n">Nama pesakit</label><input id="n" required><label for="t">No. telefon</label><input id="t" type="tel" required>
+<label for="s">Jenis rawatan</label><select id="s"><option>Rawatan am / demam &amp; batuk</option><option>Saringan darah &amp; makmal</option><option>Vaksinasi bayi / kanak-kanak</option><option>Semakan kad panel</option><option>Luka minor / jahitan</option></select>
+<label for="m">Catatan (pilihan)</label><textarea id="m" rows="3"></textarea><button class="btn" style="margin-top:18px">Hantar ke WhatsApp</button></form></div></div>
+</div>
+<div class="w" style="padding-bottom:24px"><div class="split">
+<div><h2 style="font-size:clamp(28px,4vw,42px);font-weight:800">Doktor berdaftar, peralatan lengkap</h2><p class="sub" style="margin-top:12px">Pegawai perubatan residen berdaftar dengan Majlis Perubatan Malaysia (MMC) dan memegang Perakuan Amalan Tahunan (APC) yang sah. Pengalaman dalam penyakit kronik (diabetes, darah tinggi, kolesterol), pediatrik dan kecemasan ringan.</p>
+<div class="chips" id="eq"></div></div>
+<div class="feat"><h2 style="font-size:28px">Kebersihan ketat</h2><p style="margin-top:10px">Setiap instrumen dipensterilkan mengikut piawaian hospital demi keselamatan bayi, ibu mengandung dan warga emas.</p></div></div></div>
+</section>
+</main>
+
+<footer><div class="w"><b>KLINIK AFEEYA</b> Desa Coalfields<br>Desa Coalfields, 47000 Sungai Buloh, Selangor &middot; WhatsApp / Telefon 011-1662 2829<br><br>&copy; <span id="yr"></span> Klinik Afeeya Desa Coalfields. Hak cipta terpelihara.</div></footer>
+<a class="btn fab" href="#" data-wa="Salam Klinik Afeeya, saya ingin bertanya.">WhatsApp</a>
+
+<script>
+const WA="601116622829";
+const I={heart:"M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z",flask:"M10 2v7.5L4 19a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 19l-6-9.5V2M8.5 2h7",card:"M2 6h20v12H2zM2 10h20",pulse:"M3 12h4l3-8 4 16 3-8h4",plus:"M12 5v14M5 12h14",wind:"M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h8",moon:"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z",band:"M8 8l8 8M5 11l6-6 8 8-6 6zM10 10h.01"};
+const ic=k=>`<div class="ic"><svg viewBox="0 0 24 24"><path d="${I[k]}"/></svg></div>`;
+const $=id=>document.getElementById(id);
+$('yr').textContent=new Date().getFullYear();
+$('why').innerHTML=[["heart","Doktor yang tidak tergesa","Pemeriksaan teliti dan suasana mesra kanak-kanak, supaya si kecil tenang ketika vaksin atau demam."],["flask","Keputusan semasa lawatan","Ujian darah, denggi pantas, HbA1c, air kencing dan ECG boleh dibuat di klinik."],["card","Kad panel diterima","PMCare, MiCARE, Medilink, AIA dan banyak lagi. Tanpa bayaran tunai."]].map(x=>`<div class="card">${ic(x[0])}<h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('');
+$('rv').innerHTML=[["Doktor sangat teliti dan terangkan fungsi setiap ubat. Klinik bersih, staf kaunter ramah.","Nurul Farhana","Penduduk Desa Coalfields"],["Bawa anak demam panas waktu malam, bersyukur klinik buka sampai tengah malam. Claim PMCare pun lancar.","Faizal Ridzwan","Pesakit panel korporat"],["Pakej blood test berbaloi, harga ubat berpatutan, parkir di hadapan klinik banyak.","Siti Sarah","Pemeriksaan rutin"]].map(x=>`<div class="card rv"><p>${x[0]}</p><small><b>${x[1]}</b>, ${x[2]}</small></div>`).join('');
+const P=[["PMC","PMCare","E-kad diterima"],["MIC","MiCARE","Direct GL cashless"],["HM","HealthMetrics","Imbas aplikasi"],["AIA","AIA Corporate","MyAIA / kad"],["MDL","Medilink-Global","Kad fizikal / e-kad"],["RED","Red Alert","Portal TPA"],["GE","Great Eastern","Kad perubatan"],["ALZ","Allianz Care","Pesakit luar"],["CMP","Compumed","TPA majikan"],["SEL","Selcare / Iltizam","Inisiatif Selangor"],["PDS","Peduli Sihat","Skim kesihatan"],["IXS","IXS Asia","TPA bersepadu"]];
+$('pnl').innerHTML=P.map(p=>`<div class="card pn"><i>${p[0]}</i><span>${p[1]}<small>${p[2]}</small></span></div>`).join('');
+$('mq').innerHTML=[...P,...P].map(p=>`<span>${p[1]}</span>`).join('');
+$('ps').oninput=e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('.pn').forEach(c=>c.style.display=c.textContent.toLowerCase().includes(q)?'':'none')};
+const S=[["a","pulse","Konsultasi pesakit luar","Demam, selsema, tonsil, batuk panjang, alahan kulit, migrain, gastrik dan cirit-birit."],["b","flask","Saringan darah &amp; kolesterol","FBC, buah pinggang, enzim hati, profil lipid, asid urik dan HbA1c."],["c","heart","Vaksin bayi &amp; kesihatan ibu","Imunisasi wajib dan pilihan (Rotavirus, Pneumococcal, Influenza, Cacar Air), UPT dan saringan jaundis bayi."],["d","band","Luka &amp; jahitan minor","Jahitan, pembalut luka diabetes, pembuangan nanah dan cucian telinga."],["b","pulse","ECG &amp; saringan jantung","ECG 12-lead untuk denyutan tidak sekata, sakit dada dan pemantauan darah tinggi."],["a","wind","Nebulizer &amp; asma","Bantuan pernafasan segera untuk asma, bronkitis dan kahak tebal kanak-kanak."]];
+const C={all:"Semua",a:"Pesakit luar",b:"Darah &amp; jantung",c:"Ibu &amp; anak",d:"Luka minor"};
+function rs(f){$('chips').innerHTML=Object.keys(C).map(k=>`<button class="chip ${k==f?'on':''}" data-k="${k}">${C[k]}</button>`).join('');
+$('srv').innerHTML=S.filter(s=>f=='all'||s[0]==f).map(s=>`<div class="card">${ic(s[1])}<h3>${s[2]}</h3><p>${s[3]}</p><a class="l" href="#" data-wa="Salam Klinik Afeeya, saya ingin bertanya tentang: ${s[2].replace('&amp;','&')}.">Tanya di WhatsApp</a></div>`).join('')}
+rs('all');$('chips').onclick=e=>{if(e.target.dataset.k)rs(e.target.dataset.k)};
+$('eq').innerHTML=["ECG jantung","Nebulizer","Makmal darah segera","Prosedur minor"].map(x=>`<span class="chip on">${x}</span>`).join('');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-wa]');if(a){e.preventDefault();window.open(`https://wa.me/${WA}?text=${encodeURIComponent(a.dataset.wa)}`,'_blank')}});
+$('f').onsubmit=e=>{e.preventDefault();const m=`Salam Klinik Afeeya,\nSaya ingin mendaftar / bertanya:\n- Nama: ${$('n').value}\n- Telefon: ${$('t').value}\n- Rawatan: ${$('s').value}\n- Catatan: ${$('m').value||'Tiada'}`;window.open(`https://wa.me/${WA}?text=${encodeURIComponent(m)}`,'_blank')};
+// live day track
+const sh=[[8.5,13,'s1','Pagi'],[14,18,'s2','Petang'],[19,23.5,'s3','Malam']];
+function live(){const d=new Date(),t=d.getHours()+d.getMinutes()/60,pc=x=>((x-8.5)/15*100).toFixed(2);
+let h=sh.map(s=>`<div class="seg ${s[2]}" style="left:${pc(s[0])}%;width:${((s[1]-s[0])/15*100).toFixed(2)}%">${s[3]}</div>`).join('');
+if(t>=8.5&&t<=23.5)h+=`<div class="now" style="left:${pc(t)}%"><b>Kini</b></div>`;
+$('track').innerHTML=h;const o=sh.find(s=>t>=s[0]&&t<=s[1]);
+$('dot').className='dot'+(o?'':' x');$('stx').textContent=o?`Buka sekarang, sif ${o[3].toLowerCase()} sedang berjalan`:'Rehat seketika, sambung dalam sif seterusnya'}
+live();setInterval(live,60000);
+// router
+function route(){const h=(location.hash.replace('#/','')||'').split('/')[0];const id=['rawatan','panel','klinik'].includes(h)?h:'';
+document.querySelectorAll('.pg').forEach(s=>s.classList.toggle('on',s.id=='p-'+id));
+document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#/'+id));scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
